@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 3em;
+    color: white;
+}
+
+body{
+    margin:0;
+    padding: 0;
+}
+.panneaux{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    z-index: -1;
+}
+
+
+.panneau{
+
+    flex : 1;
+    height: 100%;
+    background-image: url('images/paysage1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 2s flex ease-in-out;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items : center;
+}
+.panneau:hover{
+    flex:5;
+}
+
+
+.paysage1{
+    background-image: url('images/paysage1.jpg');
+}.paysage2{
+    background-image: url('images/paysage2.jpg');
+}.paysage3{
+    background-image: url('images/paysage3.jpg');
+}.paysage4{
+    background-image: url('images/paysage4.jpg');
+}.paysage5{
+    background-image: url('images/paysage5.jpg');
+}
+
+.panneau>p{
+    color: white;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    transition: 2s;
+}
+
+
+.panneau>p.paragrapheDuHaut{
+    transform: translateY(-400%);
+    opacity: 0%;
+}
+
+.panneau:hover>p.paragrapheDuHaut{
+    opacity: 100%;
+    transform: translateY(0%);
+
+}
+
+.panneau>p.paragrapheDuBas{
+    transform: translateY(400%);
+    opacity: 0%;
+}
+
+.panneau:hover>p.paragrapheDuBas{
+    opacity: 100%;
+    transform: translateY(0%);
+
+}
+.panneau>div{
+    transition: 2s;
+}
+
+.panneau>.divDuHaut{
+    transform: translateY(-400%);
+    opacity: 0%;
+}
+
+.panneau:hover>.divDuHaut{
+    opacity: 100%;
+    transform: translateY(0%);
+
+}
+.divDuHaut{
+    width: 150px;
+    height: 150px;
+    border: 2px solid white;
+    border-radius: 50%;
+    background-image:url('images/paysage3.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
